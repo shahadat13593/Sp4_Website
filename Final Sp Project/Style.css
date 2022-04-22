@@ -1,0 +1,120 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main {
+    padding: 50px 120px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.product-Item {
+    width: 22%;
+    height: 500px;
+    padding: 8px;
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 5px;
+}
+
+.p-image {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.proudct-name {
+    margin-bottom: 10px;
+    height: 4px;
+    text-align: center;
+}
+
+.p-price {
+    height: 100px;
+    line-height: 180px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.proudct-name {
+    font-size: 25px;
+    margin: 15px;
+}
+
+.P-BUTTON {
+    margin: 0;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.footer-js {
+    background-color: #0D6EFD;
+}
+
+#footer-id {
+    background-color: #0D6EFD;
+}
+
+.footer {
+    color: #eee;
+    padding: 28px 8px 18px;
+    margin-top: 18px;
+}
+
+.f-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.a-text {
+    color: black;
+    text-decoration: unset;
+}
+
+.copy {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+#copy-signUp {
+    margin-bottom: 12px;
+}
+
+.singUp {
+    text-align: center;
+    padding-right: 12px;
+}
+
+.s-div {
+    padding: 10px;
+    margin: 10px;
+}
+
+.signUp-main {
+    padding: 60px 130px;
+}
+
+#underLine {
+    text-decoration: unset;
+}
+
+.s-header {
+    padding: 40px;
+    text-align: center;
+}
+
+.js-from {
+    background-color: rgb(181, 188, 196);
+}

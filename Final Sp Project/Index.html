@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Eccentric.com</title>
+</head>
+
+
+<body>
+    <!-- =================Navbar================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">Eccentric</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#main-id">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+              </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Consumer Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Appeal</a></li>
+                            <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                            <li><a class="dropdown-item" href="#">Office Supplies</a></li>
+                            <li><a class="dropdown-item" href="#">Vehicle</a></li>
+                            <li><a class="dropdown-item" href="#">Sports & entertainment</a></li>
+                            <li><a class="dropdown-item" href="#"> Beauty &  personal care</a></li>
+
+
+                            <li>
+                                <a class="dropdown-item" href="#"></a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">View All</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer-id">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up/Login</a>
+                    </li>
+
+
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-dark text-light" type="submit">
+              Search
+            </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =================================Modal===================================== -->
+
+
+    <!--======================================= Modal =========================================== -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Email: <input type="email" placeholder="Type Your Email" class="form-control m-1"> Password: <input type="password" placeholder="Type Your password" class="form-control m-1">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary"><a href='http://127.0.0.1:5500/Index.html' style="color: black;" >Log In</a></button>
+
+                </div>
+                <div class="s-div">
+                    Don't have an acccount?
+                    <a href="http://127.0.0.1:5500/SignUp.html" target="blank">
+                        Sign Up >
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--=============================== ============================Carousel==================================================== -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="p1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="p2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="p3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="p4.jpg" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- ===========================================main============================================ -->
+    <div class="main" id="main-id">
+        <!-- =============row-1================= -->
+        <div class="row">
+            <!-- ================product-1 ===========================-->
+            <div class="product-Item">
+                <img src="pc1.jpg" alt="" class="p-image" />
+                <h1 class="proudct-name">Bengal Meat Beef Bone In - 1Kg</h1>
+                <p class="p-price">
+                    Tk 655
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+            <!-- ================product-2 ===========================-->
+            <div class="product-Item">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/0fe2aa009913-apache-rtr.png" alt="" class="p-image" />
+                <h1 class="proudct-name">TVS Apache RTR 160 Racing Edition</h1>
+                <p class="p-price">
+                    Tk 159900.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+
+            </div>
+
+            <!-- ================product-3 ===========================-->
+            <div class="product-Item">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/b58a1ccdafdf-2.png" alt="" class="p-image" />
+                <h1 class="proudct-name">Xiaomi Haylou Solar LS05 Smart Watch</h1>
+                <p class="p-price">
+                    Tk 1999.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+            <!-- ================product-4 ===========================-->
+            <div class="product-Item">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/e777acbe7656-we55ru20.png" alt="" class="p-image" />
+                <h1 class="proudct-name">Walton WE55RU20 55" Smart TV </h1>
+                <p class="p-price">
+                    Tk 63050.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+        </div>
+
+        <!-- =============row-2================= -->
+        <div class="row">
+            <!-- ================product-5 ===========================-->
+            <div class="product-Item">
+                <img src="https://chaldn.com/_mpimage/china-fuji-apple-50-gm-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D54849&q=low&v=1&m=400&webp=1" alt="" class="p-image" />
+                <h1 class="proudct-name">China Fuji Apple ± 50 gm</h1>
+                <p class="p-price">
+                    Tk 199.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+            <!-- ================product-6 ===========================-->
+            <div class="product-Item">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/50c6c7587eb8-1-removebg-preview.png" alt="" class="p-image" />
+                <h1 class="proudct-name">Walton WFA-2A3-GDXX-XX Refrigerator</h1>
+                <p class="p-price">
+                    Tk 17900.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+
+            <!-- ================product-7 ===========================-->
+            <div class="product-Item">
+                <img src="https://chaldn.com/_mpimage/drools-kitten-ocean-fish-buy-2-get-1-free-400-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D53217&q=low&v=1&m=400&webp=1" alt="" class="p-image" />
+                <h1 class="proudct-name">Drools Kitten Ocean Fish</h1>
+                <p class="p-price">
+                    Tk 401.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+            <!-- ================product-8 ===========================-->
+            <div class="product-Item">
+                <img src="https://chaldn.com/_mpimage/aci-savlon-liquid-antiseptic-1000-ml?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D73539&q=low&v=1&m=400&webp=1" alt="" class="p-image" />
+                <h1 class="proudct-name">ACI Savlon Liquid Antiseptic</h1>
+                <p class="p-price">
+                    Tk 220.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+        </div>
+        <!-- =============row-3================= -->
+        <div class="row">
+            <!-- ================product-9 ===========================-->
+            <div class="product-Item">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/eefd08e53ca5-4.png" alt="" class="p-image" />
+                <h1 class="proudct-name">Lyschy Polyester SummerJacket</h1>
+                <p class="p-price">
+                    Tk 9856.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+            <!-- ================product-10 ===========================-->
+            <div class="product-Item">
+                <img src="https://sc04.alicdn.com/kf/H86822743e39545e4af7084d781dbd57ci.jpg" alt="" class="p-image" />
+                <h1 class="proudct-name">VOF domestic household sewing machine</h1>
+                <p class="p-price">
+                    Tk 20000.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+
+            <!-- ================product-11 ===========================-->
+            <div class="product-Item">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/03d499f20690-1bd29b1510ab-1.png" alt="" class="p-image" />
+                <h1 class="proudct-name">Rupchanda Soybean Oil- 5 Liter</h1>
+                <p class="p-price">
+                    TK 720.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+            <!-- ================product-12 ===========================-->
+            <div class="product-Item">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/d489d97a68a4-samsung-ar18tvhydwkufe.png" alt="" class="p-image" />
+                <h1 class="proudct-name">Samsung Split Air Conditioner </h1>
+                <p class="p-price">
+                    Tk 82031.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+        </div>
+
+
+        <!-- =============row-4================= -->
+        <div class="row">
+            <!-- ===============product-13 ===========================-->
+            <div class="product-Item">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/4d692f5f76ba-1.png" alt="" class="p-image" />
+                <h1 class="proudct-name">OPPO Reno 5 </h1>
+                <p class="p-price">
+                    Tk 26499.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+            <!-- ===============product-14 ===========================-->
+            <div class="product-Item">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/ff4a70865354-3.png" alt="" class="p-image" />
+                <h1 class="proudct-name">Lenovo LP40 TWS Earbuds</h1>
+                <p class="p-price">
+                    Tk 924.00
+                </p>
+                <button class="btn btn-success P-BUTTON">ADD TO CART</button>
+            </div>
+
+            <!-- ===============product-15 ===========================-->
+            <div class="product-Item">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/46e6cf1f0c7f-oneplus_car_charger_30-removebg-preview.png" alt="" class="p-image" />
+                <h1 class="proudct-name">OnePlus Warp Car Charger-30W </h1>
+                <p class="p-price ">
+                    Tk 3800.00
+                </p>
+                <button class="btn btn-success P-BUTTON ">ADD TO CART</button>
+            </div>
+            <!-- ===============product-16 ===========================-->
+            <div class="product-Item ">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/4ffa23c443c8-macbook-pro-2020-silicon-series-512gb-silver.png " alt=" " class="p-image " />
+                <h1 class="proudct-name ">Apple MacBook Pro 2020 </h1>
+                <p class="p-price ">
+                    Tk 159650.00
+                </p>
+                <button class="btn btn-success P-BUTTON ">ADD TO CART</button>
+            </div>
+        </div>
+
+
+        <!-- ============================footer================ -->
+
+
+        <BR>
+        <BR>
+
+
+        <footer class="footer" id="footer-id">
+            <div class="f-row">
+                <div class="Your-Account">
+                    <h5>Your Account</h5>
+                    <a href="#" class="a-text">YOUR ACCOUNT</a><br>
+                    <a href="#" class="a-text">PERSONAL INFORMATION</a><br>
+                    <a href="#" class="a-text">ADDRESSES</a><br>
+                    <a href="#" class="a-text">DISCOUNT</a><br>
+                    <a href="#" class="a-text">ORDER HISTORY</a><br>
+                </div>
+                <div class="Iinformation">
+                    <h5>Iinformation</h5>
+                    <a href="contact.php" class="a-text">CONTACT</a><br>
+                    <a href="#" class="a-text">SITEMAP</a><br>
+                    <a href="#" class="a-text">LEGAL NOTICE</a><br>
+                    <a href="#" class="a-text">TERMS AND CONDITIONS</a><br>
+                    <a href="#" class="a-text">ABOUT US</a><br>
+                </div>
+                <div class="Our Offer">
+                    <h5>Our Offer</h5>
+                    <a href="#" class="a-text">NEW PRODUCTS</a> <br>
+                    <a href="#" class="a-text">TOP SELLERS</a><br>
+                    <a href="#" class="a-text">SPECIALS</a><br>
+                    <a href="#" class="a-text">MANUFACTURERS</a><br>
+                    <a href="#" class="a-text">SUPPLIERS</a> <br/>
+                </div>
+
+            </div>
+
+
+        </footer>
+        <DIV class="copy">
+            CopyRight&copy;Eccentric.com
+
+        </DIV>
+
+        <script src="App.js "></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+</body>
+
+</html>
